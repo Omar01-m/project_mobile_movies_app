@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/g22"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_background"
@@ -22,7 +23,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -55,29 +56,28 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
                     android:text="Watch videos in\n  virtual reality"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="424dp"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="40sp"
-                    android:layout_marginTop="32dp"
-                    tools:ignore="MissingConstraints" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="424dp" />
 
                 <TextView
                     android:id="@+id/View2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Doawnload and watch offline \n whatever"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    />
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -86,24 +86,23 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="64dp"
                 android:layout_marginEnd="64dp"
-                android:background="@drawable/background_gradient_2"
-                >
+                android:background="@drawable/background_gradient_2">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button4"
+                    android:id="@+id/getinbtt"
+                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    android:background="@drawable/btn_background"
+                    android:gravity="center"
                     android:text="Get in"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_margin="32dp"
-                    android:background="@drawable/btn_background"
-                    style="@style/Widget.AppCompat.Button"
-                    android:textSize="18sp"
-                    android:gravity="center"
-                    android:textColor="@color/white"                    />
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
