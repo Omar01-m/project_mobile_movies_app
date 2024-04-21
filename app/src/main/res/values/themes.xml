@@ -17,6 +17,9 @@
     <style name="roundedImageView">
         <item name="cornerFamily"> rounded</item>
         <item name="cornerSize"> 10sp</item>
-
+    </style>
+    <style name="roundedImageView.">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10sp</item>
     </style>
 </resources>
